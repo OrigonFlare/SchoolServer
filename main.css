@@ -1,0 +1,137 @@
+body {
+    font-family: "Lato", sans-serif
+}
+
+
+.bar {
+    background-color: rgb(218, 218, 218);
+    padding: 15px;
+
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 98%;
+}
+
+
+.bar_item {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.bar_item:hover {
+    background-color: rgb(176, 176, 176);
+}
+
+
+.section1 {
+    position: relative;
+    top: 60px;
+    left: 10px;
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+
+
+    width: 70%;
+}
+
+
+.item1 { grid-area: 1 / 1; }
+.item2 { grid-area: 1 / 2; position: relative; left: -30px;}
+.item3 { grid-area: 2 / 1; }
+.item4 { grid-area: 2 / 2; position: relative; left: -30px;}
+
+
+.image {
+    width: 90%;
+}
+
+
+.item4 {
+    height: 307.5px;
+    width: 460px;
+    background-color: rgb(176, 176, 176);
+}
+
+.info {
+    padding: 0px 10px;
+}
+
+
+
+.box {
+    position: absolute;
+    top: 68px;
+    right: 200px;
+
+
+    height: 250px;
+    width: 200px;
+    background-color: rgb(176, 176, 176);
+    padding: 15px;
+}
+.contact {
+    padding: 0px 15px;
+}
+
+
+.text {
+    padding: 0px 60px;
+}
+
+
+.buttonSend {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 25px 70px 0px 70px;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #a {
+        display: none;
+    }
+    #b {
+        display: none;
+    }
+    #c {
+        display: none;
+    }
+    .item4 {
+        position: relative;
+        left: 5px;
+    }
+}
+
+
+#texttoshow {
+    display: none;
+    visibility: hidden;
+    margin-left: 70px;
+    color: rgb(24, 255, 24);
+}
